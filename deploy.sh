@@ -14,12 +14,12 @@ cd docs/.vuepress/dist
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:realwfm/realwfm.github.io.git
+  githubUrl=git@github.com:realwfm/blog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/xugaoyi/vuepress-theme-vdoing.git
-  git config --global user.name "xugaoyi"
-  git config --global user.email "894072666@qq.com"
+  githubUrl=https://realwfm:${GITHUB_TOKEN}@github.com:realwfm/blog.git
+  git config --global user.name "realwfm"
+  git config --global user.email "759221055@qq.com"
 fi
 git init
 git add -A
