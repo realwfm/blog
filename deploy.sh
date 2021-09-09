@@ -12,6 +12,7 @@ cd docs/.vuepress/dist
 # deploy to github pages
 #echo 'b.xugaoyi.com' > CNAME
 
+
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:realwfm/blog.git
